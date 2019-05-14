@@ -1,0 +1,121 @@
+/*General*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #F2F2F2;
+  font-family: 'Ubuntu', sans-serif;
+}
+h1{
+  margin: 60px 0 30px 0;
+  color: #F27141;
+}
+
+/*buttons for login/index*/
+
+.btn a{
+  color: white;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+button a:hover{
+  color: white;
+}
+
+/*Login and sign forms*/
+
+.form-login input{
+  text-align: center;
+}
+
+.form-login input[type="submit"]{
+  width: 30%;
+  padding: 10px;
+  margin-top: 30px;
+  background: #C1D6D9;
+}
+
+.container{
+  width: 100%;
+}
+
+.borderline{
+  border:none;
+  border-top: solid 10px #F27F3D;
+  background: none;
+}
+
+.form-login{
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.form-login .form-control{
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.wrapper{
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.register, .login{
+  margin-top: 50px;
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  font-size: 1em;
+  text-align: center;
+  color: #77A1A6;
+}
+
+.errors{
+  color: #D8000C;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.wrong-input{
+  border: solid 2px #D8000C !important;
+}
+
+/*Bootstrap Navbar modifications*/
+
+.navbar-form .form-group input[type="text"]{
+  width: 500px;
+}
+
+/*Table in users*/
+
+.table{
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+@keyframes fadeInDown {
+  0%{
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
