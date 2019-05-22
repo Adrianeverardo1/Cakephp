@@ -41,9 +41,9 @@
         <table class="table" id="table">
           <thead>
             <tr>
-              <td>Id</td>
-              <td>Username</td>
-              <td>Email</td>
+              <td><?php echo $this->Paginator->sort('User.id', 'Id') ?></td>
+              <td><?php echo $this->Paginator->sort('User.username', 'Username') ?></td>
+              <td><?php echo $this->Paginator->sort('User.email', 'Email') ?></td>
               <td>Acciones</td>
             </tr>
             <tbody>
@@ -60,8 +60,9 @@
             <?php endforeach; ?>
           </tbody>
         </table>
-      </div>
-      <div id="data">
+		<div class="text-center">
+			<?php echo $this->element('pagination'); ?>
+		</div>
       </div>
   </body>
 </html>
